@@ -1,0 +1,22 @@
+'''
+Polymorphism ---> Method Overloading and method overriding 
+'''
+
+class Parent:
+
+    def __init__(self,num):
+        self.__num = num
+
+    def get_num(self):
+        return self.__num
+    
+class Child(Parent):
+
+    def show(self):
+        print("This is in child class")
+
+son = Child(100)
+
+print(son.get_num())
+son.show()
+
