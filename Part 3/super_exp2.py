@@ -5,6 +5,8 @@ class Phone:
         self.price = price
         self.brand = brand
         self.camera = camera
+    def buy(self):
+        print("Buying phone")
 
 class SmarterPhone(Phone):
 
@@ -20,3 +22,5 @@ s = SmarterPhone(40000, "Xiaomi", 50, "Android", 8)
 print(s.os)
 
 print(s.brand)
+
+s.buy()
