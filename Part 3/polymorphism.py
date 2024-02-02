@@ -12,11 +12,15 @@ class Parent:
     
 class Child(Parent):
 
-    def show(self):
-        print("This is in child class")
+    def __init__(self,val,num):
+        self.__val = val
 
-son = Child(100)
+    def get_val(self):
+        return self.__val
 
-print(son.get_num())
-son.show()
+son = Child(100,10)
+
+print("Parent: Num: ", son.get_num()) #Since, Child class has its own constructor, so the Parents constructor won't trigger.
+print("Child: Val: ",son.get_val())
+
 
