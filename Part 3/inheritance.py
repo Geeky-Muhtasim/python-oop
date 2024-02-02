@@ -19,3 +19,11 @@ std1.login()
 std1.register()
 std1.enroll()
 std1.review()
+
+
+user1 = User()
+
+'''
+user1.enroll() Here, the super class can't 
+access the properties of sub class.
+'''
